@@ -1,6 +1,16 @@
 
 # 6 luento
 
+
+## Block of Flats esimerkki
+
+OHJELMOINTI I esimerkki
+-----------------------------------
+
+Maven-projekti, jonka voi avata esim. NetBeansissä. 
+Esimerkki, miten voidaan rakentaa tietomallista oliohierarkia. 
+
+
 ## Maven -Java-projekti Aircraftmvn
 
 Projektin voi avata esim. IntelliJ- tai NetBeans -editorilla. 
