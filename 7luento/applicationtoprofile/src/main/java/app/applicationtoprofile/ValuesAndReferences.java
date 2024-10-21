@@ -1,7 +1,7 @@
-package applicationtoprofile;
+package app.applicationtoprofile;
 
-import model.Aircraft;
-import model.AircraftModel;
+import app.applicationtoprofile.model.Aircraft;
+import app.applicationtoprofile.model.AircraftModel;
 
 
 public class ValuesAndReferences {

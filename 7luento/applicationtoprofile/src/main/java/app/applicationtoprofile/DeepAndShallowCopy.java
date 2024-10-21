@@ -1,7 +1,6 @@
-package applicationtoprofile;
+package app.applicationtoprofile;
 
-import model.Aircraft;
-import ui.InputQuestions;
+import app.applicationtoprofile.model.Aircraft;
 
 
 public class DeepAndShallowCopy {
@@ -28,7 +27,7 @@ public class DeepAndShallowCopy {
         eka.getBlackBox().setData("New data");
         Aircraft toka = eka;
         eka.setAircraftType("muutettu");
-        eka.setNumberOfSeats(300);
+        eka.setMaxNumberOfPassengers(900);
         eka.getBlackBox().setData("Data changed!");
         System.out.println("eka: "+eka.toString());
         System.out.println("toka viittaus: "+toka.toString());
@@ -55,7 +54,7 @@ public class DeepAndShallowCopy {
         eka.getBlackBox().setData("New data");
         Aircraft toka = (Aircraft) eka.clone();
         eka.setAircraftType("muutettu");
-        eka.setNumberOfSeats(900);
+        eka.setMaxNumberOfPassengers(900);
         eka.getBlackBox().setData("Data changed!");
         System.out.println("eka: "+eka.toString());
         System.out.println("toka shallow copy: "+toka.toString());
@@ -82,7 +81,7 @@ public class DeepAndShallowCopy {
         eka.getBlackBox().setData("New data");
         Aircraft toka = eka.copy();
         eka.setAircraftType("muutettu");
-        eka.setNumberOfSeats(300);
+        eka.setMaxNumberOfPassengers(900);
         eka.getBlackBox().setData("Data changed!");
         System.out.println("eka: "+eka.toString());
         System.out.println("toka deep copy: "+toka.toString());

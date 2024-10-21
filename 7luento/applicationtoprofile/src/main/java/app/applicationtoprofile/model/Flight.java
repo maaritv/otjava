@@ -1,4 +1,4 @@
-package model;
+package app.applicationtoprofile.model;
 
 import java.sql.Timestamp;
 
@@ -75,7 +75,7 @@ public class Flight {
     }
 
     public double calculateMaximumTicketProfit() {
-        return ((double) (this.aircraft.getNumberOfSeats()) * flightTicketPrice);
+        return ((double) (this.aircraft.getMaxNumberOfPassengers()) * flightTicketPrice);
     }
 
     public void checkStartAndEndTimestamps() throws Exception {

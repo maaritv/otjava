@@ -1,4 +1,4 @@
-package model;
+package app.applicationtoprofile.model;
 
 public class Airport {
 
