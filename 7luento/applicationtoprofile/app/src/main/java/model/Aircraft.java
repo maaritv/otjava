@@ -7,15 +7,15 @@ package model;
 public class Aircraft implements Cloneable {
 
     private String aircraftType;
-    private int maxNumberOfPassengers;
+    private int numberOfSeats;
     private BlackBox blackBox=new BlackBox();
     
     private AircraftModel aircraftModel;
 
-    public Aircraft(String aircraftType, int maxNumberOfPassengers) {
+    public Aircraft(String aircraftType, int numberOfSeats) {
         System.out.println("2. Initialize the new instance of Aircraft.");
         this.aircraftType = aircraftType;
-        this.maxNumberOfPassengers = maxNumberOfPassengers;
+        this.numberOfSeats = numberOfSeats;
     }
 
     public Aircraft() {
@@ -50,14 +50,14 @@ public class Aircraft implements Cloneable {
     public Aircraft copy() {
         Aircraft acraft = new Aircraft();
         acraft.aircraftType=this.aircraftType;
-        acraft.maxNumberOfPassengers = this.maxNumberOfPassengers;
+        acraft.numberOfSeats = this.numberOfSeats;
         acraft.blackBox=this.blackBox.copy();
         return acraft;
     }
 
     @Override
     public String toString() {
-        return "Aircraft{" + "aircraftType=" + aircraftType + ", maxNumberOfPassengers=" + maxNumberOfPassengers + ", blackBox=" + blackBox + '}';
+        return "Aircraft{" + "aircraftType=" + aircraftType + ", numberOfSeats=" + numberOfSeats + ", blackBox=" + blackBox + '}';
     }
 
     
@@ -66,7 +66,7 @@ public class Aircraft implements Cloneable {
         if (aircraftType == null) {
             throw new IllegalArgumentException("Aircraft type is not set!");
         }
-        if (maxNumberOfPassengers <= 0) {
+        if (numberOfSeats <= 0) {
             throw new IllegalArgumentException("Max number of passengers is not valid");
         }
     }
@@ -79,12 +79,12 @@ public class Aircraft implements Cloneable {
         this.aircraftType = aircraftType;
     }
 
-    public int getMaxNumberOfPassengers() {
-        return maxNumberOfPassengers;
+    public int getNumberOfSeats() {
+        return numberOfSeats;
     }
 
-    public void setMaxNumberOfPassengers(int maxNumberOfPassengers) {
-        this.maxNumberOfPassengers = maxNumberOfPassengers;
+    public void setNumberOfSeats(int numberOfSeats) {
+        this.numberOfSeats = numberOfSeats;
     }
 
     public BlackBox getBlackBox() {

@@ -76,7 +76,7 @@ public class AddNewFlightViewModel {
 
     public void setAircraftMaxNumberOfPassengers(String aircraftMaxNumberOfPassengers) {
         this.aircraftMaxNumberOfPassengers = aircraftMaxNumberOfPassengers;
-        this.flight.getAircraft().setMaxNumberOfPassengers(Integer.parseInt(this.aircraftMaxNumberOfPassengers));
+        this.flight.getAircraft().setNumberOfSeats(Integer.parseInt(this.aircraftMaxNumberOfPassengers));
     }
 
     public String getSourceAirportName() {
