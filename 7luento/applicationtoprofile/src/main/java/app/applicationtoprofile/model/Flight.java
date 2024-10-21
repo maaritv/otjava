@@ -75,7 +75,7 @@ public class Flight {
     }
 
     public double calculateMaximumTicketProfit() {
-        return ((double) (this.aircraft.getMaxNumberOfPassengers()) * flightTicketPrice);
+        return ((double) (this.aircraft.getSeats()) * flightTicketPrice);
     }
 
     public void checkStartAndEndTimestamps() throws Exception {
