@@ -22,15 +22,23 @@ public class Main {
 
     System.out.println("Tehdään huone");
     Room livingroom = new Room();
-    livingroom.setWidth(3.4d);
-    livingroom.setWidth(4.6d);
+    livingroom.setWidth(3.8d);
+    livingroom.setLength(2.6d);
     livingroom.setDescription("Juhan Olkkari");
     System.out.println(house + "\n");
     System.out.println("Lisätään huone asuntoon");
 
     juhaApartment.addRoom(livingroom);
     house.addApartment(juhaApartment);
+    
+    livingroom.setLength(4.5);
+    livingroom.setDescription("Juhan korkeampi olohuone");
 
     System.out.println(house + "\n");
+    //Tulostetaan huoneet talon ensimmäisestä asunnosta.
+    //livingroom on lisätty tähän asuntoon, joten sen 
+    //huoneisiin voidaan osoittaa alla olevan kaltaisella 
+    //komennolla.
+    System.out.println(house.getApartments().get(0).getRooms());
   }
 }

@@ -11,7 +11,7 @@ public class Room {
 
 
   public void setLength(Double length) {
-    setLength(length);
+    this.length=length;
   }
 
   public Double getWidth() {
@@ -29,5 +29,12 @@ public class Room {
   public String getDescription(){
     return this.description;
   }
+
+    @Override
+    public String toString() {
+        return "Room{" + "width=" + width + ", length=" + length + ", description=" + description + '}';
+    }
+  
+  
 
 }
