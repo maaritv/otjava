@@ -6,6 +6,7 @@ public class Book implements Cloneable {
     private String Isbn;
     private String name;
     private Author author;
+    private Genre genre;
     private String backCoverText;
 
     public Integer getId() {
@@ -39,6 +40,15 @@ public class Book implements Cloneable {
     public void setAuthor(Author author) {
         this.author = author;
     }
+
+    public Genre getGenre() {
+        return genre;
+    }
+
+    public void setGenre(Genre genre) {
+        this.genre = genre;
+    }
+    
 
     public String getBackCoverText() {
         return backCoverText;
